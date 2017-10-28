@@ -1,0 +1,174 @@
+/*main*/
+
+body {
+    margin: 0;
+    padding:0;
+    font-family: "PT Sans";
+    
+}
+
+
+nav{ 
+    padding:1.5em;
+    background: #333;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+header{
+    font-size:20px;
+    flex: 0.9;
+    vertical-align: center;
+    height: 50px;
+  
+}
+
+main {
+    min-height:400px;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+}
+
+
+
+/* hamburger icon */ 
+#hamburger-icon {
+    width:50px;
+    height:18px;
+    margin-bottom: 1em;;
+}
+.hb-line {
+    height:5px;
+    width:35px;
+    background-color: white;
+    margin:6px 0;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    border-right: 1px solid black;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+
+    .hamburger-icon{
+        
+    }
+}
+
+
+#parallax-image {
+    background: url("steeldrum.jpg") no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    background-position: absolute;
+    
+    width: 100%;
+    min-height:350px;
+}
+
+
+#parallax-image-two {
+    background: url("steeldrum-two.jpg") no-repeat fixed;
+    background-position: top;
+    background-size: cover;
+    background-position: absolute;
+    width: 100%;
+    min-height:300px;
+}
+
+#para-header { 
+    z-index: 3;
+    padding:0;
+    margin:0;
+    text-align: center;
+    vertical-align: middle;
+    color: red;
+    padding-top: 130px;
+    animation: fadein 2s;;
+}
+
+@keyframes fadein {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+#para-header h2 {
+    text-align: center;
+    /*text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);*/
+    font-family: "Pacifico";
+    font-size:40px;
+    padding:1em 1em 1em 1em;
+    margin:0;
+    transition: opacity 2s ease-in;
+    
+    
+  
+    }
+
+
+section{
+    text-align: center;
+     margin-right:40px;
+     min-height: 150px;
+}
+
+ ul{
+     text-align: center;
+     list-style: none;
+ }
+
+ ul li{
+     text-align: center;
+ }
+
+
+
+
+
